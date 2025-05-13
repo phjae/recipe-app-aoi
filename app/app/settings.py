@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'core',
     'rest_framework',
+    'rest_framework.authtoken',
     'drf_spectacular',
     'user'
 ]
@@ -132,6 +133,7 @@ STATIC_URL = '/static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+# 장고 기본 user 모델(auth.User) 안 쓰고 core.models.User를 user 모델로 쓸게
 AUTH_USER_MODEL = 'core.User'
 
 REST_FRAMEWORK = {
